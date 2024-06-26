@@ -14,8 +14,13 @@ const Auth0ProviderWithHistory = ({ children }) => {
   // };
   const navigate = useNavigate();
 
+  // For success page
+  // const onRedirectCallback = (appState) => {
+  //   navigate(appState?.returnTo || '/success');
+  // };
+
   const onRedirectCallback = (appState) => {
-    navigate(appState?.returnTo || '/success');
+    navigate(appState?.returnTo || '/terms-and-conditions');
   };
 
   return (

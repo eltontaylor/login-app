@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth0ProviderWithHistory from './Auth0ProviderWithHistory';
 import Home from './Home';
 import Profile from './Profile';
+import TermsAndConditions from './TermsAndConditions';
 import Success from './Success';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
@@ -24,6 +25,7 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/success" element={<Success />} />
         </Routes>
         <LoginButton />
